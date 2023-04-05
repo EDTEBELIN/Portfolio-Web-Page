@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+:root {
+
+    --color-body: rgb(197, 197, 197); --color-heading: #eef3db;
+    --color-base: #E71123ff;
+    --color-base2: #1c1f2c;
+    --color-brand: pink;
+    --color-brand2: #ffffff; --sidbar-width: 340px;
+    --font-base: "Bai Jamjuree";
+    
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: white;
+    font-weight: 700;    
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-brand2);
+    transition: all 0,4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);    
+}
+
+img {
+    width: 100%;
+}
+
+.text-brand {
+    color: pink
+
+
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-top: 2px solid rgba(255, 192, 203, 0.11);
+    border-bottom: 2px solid rgba(255, 192, 203, 0.11);
+
+}
+
+/* NAVBAR */
+.navbar {
+   background-color: #3B708Cff;;
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: pink;
+    text-shadow: 2px 2px #000000;
+} 
+.navbar .nav-link:hover {
+    color: rgb(208, 122, 248)
+
+
+}
+
+@media (min-width:992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: url(../images/side\ bar.gif);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 5px solid pink;
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+
+
+
+
+    }
+
+}
+
+/* BTN */
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand{
+    background-color: pink;
+    border-color: pink;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: rgb(208, 122, 248);
+    color: white;
+    border-color: rgb(208, 122, 248);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: pink;
+    position: absolute;
+    left: 0%;
+    top: 110%;
+    transition: all 0.4s;
+
+}
+
+.link-custom:hover::after {
+    width: 100%
+}
