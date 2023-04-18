@@ -59,7 +59,7 @@ img {
 
 /* NAVBAR */
 .navbar {
-   background-color: #3B708Cff;;
+   background-color: pink;;
 }
 
 .navbar .nav-link {
@@ -137,4 +137,32 @@ img {
 
 .link-custom:hover::after {
     width: 100%
+}
+
+
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .social-icons li {
+    margin: 0 40px;
+  }
+  .social-icons a {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #333;
+    text-align: center;
+    line-height: 120px;
+    color: #fff;
+    font-size: 50px;
+    transition: all 0.3s ease;
+  }
+  .social-icons a:hover {
+    background-color: pink;
 }
